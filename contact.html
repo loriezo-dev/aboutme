@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Thea Loriezo</title>
+  <meta name="description" content="Get in touch with Thea Loriezo via email or the contact form below.">
+  <link rel="canonical" href="https://loriezo-dev.github.io/seo-metadata/contact.html">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Thea Loriezo">
+  <meta property="og:description" content="Reach out to Thea Loriezo via email or the contact form.">
+  <meta property="og:image" content="https://loriezo-dev.github.io/seo-metadata/assets/picture.jpg">
+  <meta property="og:url" content="https://loriezo-dev.github.io/seo-metadata/contact.html">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <header>
+    <h1>Thea Loriezo</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <address>
+      Email me at: <a href="mailto:thealoriezo37@gmail.com">thealoriezo37@gmail.com</a>
+    </address>
+
+    <section>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>Contact me</legend>
+          <p>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required minlength="2">
+          </p>
+          <p>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9\-\s]{7,}">
+          </p>
+          <p>
+            <label for="heard">How did you hear about me?</label>
+            <select id="heard" name="heard">
+              <option value="">-- Select an option --</option>
+              <option value="friend">A friend told me</option>
+              <option value="school">Through school/classmates</option>
+              <option value="social">Social media</option>
+              <option value="github">Found you on GitHub</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" id="agree" name="agree" required>
+              I agree to be contacted.
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2026 Thea Loriezo</p>
+  </footer>
+</body>
+</html>
