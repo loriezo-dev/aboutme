@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About | Thea Loriezo</title>
-  <meta name="description" content="Learn more about Thea Loriezo, a BSIS student.">
-  <link rel="canonical" href="https://loriezo-dev.github.io/seo-metadata/about.html">
+  <title>Contact | Thea Loriezo</title>
+  <meta name="description" content="Get in touch with Thea Loriezo via email or the contact form below.">
+  <link rel="canonical" href="https://loriezo-dev.github.io/aboutme/contact.html">
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="About | Thea Loriezo">
-  <meta property="og:description" content="BSIS student learning full-stack web development.">
-  <meta property="og:image" content="https://loriezo-dev.github.io/seo-metadata/assets/picture.jpg">
-  <meta property="og:url" content="https://loriezo-dev.github.io/seo-metadata/about.html">
+  <meta property="og:title" content="Contact | Thea Loriezo">
+  <meta property="og:description" content="Reach out to Thea Loriezo via email or the contact form.">
+  <meta property="og:image" content="https://loriezo-dev.github.io/aboutme/assets/picture.jpg">
+  <meta property="og:url" content="https://loriezo-dev.github.io/aboutme/contact.html">
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -27,11 +27,51 @@
     </nav>
   </header>
   <main>
+    <address>
+      Email me at: <a href="mailto:thealoriezo37@gmail.com">thealoriezo37@gmail.com</a>
+    </address>
+
     <section>
-      <h2>About me</h2>
-      <p>I'm a BSIS student learning full-stack web development.</p>
-      <p>This site was built as part of my PROFE7 coursework, practicing semantic HTML5.</p>
-      <p>I'm currently getting comfortable with HTML, CSS, and Git/GitHub workflows.</p>
+      <form action="#" method="POST">
+        <fieldset>
+          <legend>Contact me</legend>
+          <p>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" required minlength="2">
+          </p>
+          <p>
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" required>
+          </p>
+          <p>
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9\-\s]{7,}">
+          </p>
+          <p>
+            <label for="heard">How did you hear about me?</label>
+            <select id="heard" name="heard">
+              <option value="">-- Select an option --</option>
+              <option value="friend">A friend told me</option>
+              <option value="school">Through school/classmates</option>
+              <option value="social">Social media</option>
+              <option value="github">Found you on GitHub</option>
+            </select>
+          </p>
+          <p>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </p>
+          <p>
+            <label>
+              <input type="checkbox" id="agree" name="agree" required>
+              I agree to be contacted.
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </fieldset>
+      </form>
     </section>
   </main>
   <footer>
