@@ -2,56 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | Thea Loriezo</title>
-  <meta name="description" content="Home page of Thea Loriezo, a BSIS student showcasing coursework and projects.">
-  <link rel="canonical" href="https://loriezo-dev.github.io/aboutme/index.html">
-  <!-- Open Graph -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Home | Thea Loriezo">
-  <meta property="og:description" content="BSIS student showcasing coursework and projects.">
-  <meta property="og:image" content="https://loriezo-dev.github.io/aboutme/assets/hero-md.jpg">
-  <meta property="og:url" content="https://loriezo-dev.github.io/aboutme/index.html">
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Thea Loriezo</h1>
+  <header class="site-header">
+    <a href="index.html" class="logo">Thea Loriezo</a>
     <nav>
-      <ul>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
+
   <main>
-    <article>
-      <h2>Welcome</h2>
-      <p>Hi, I'm Thea Loriezo, building this site as part of my web development coursework.</p>
-    </article>
-    <figure>
-      <img src="assets/picture.jpg" alt="Descriptive alt text for what is in the photo" width="300">
-      <figcaption>Thea Loriezo — BSIS student and web developer</figcaption>
-    </figure>
-    <picture>
-      <source type="image/webp"
-        srcset="assets/hero-sm.webp 400w,
-                assets/hero-md.webp 800w,
-                assets/hero-lg.webp 1600w"
-        sizes="(max-width: 600px) 90vw, 800px">
-      <img src="assets/hero-md.jpg"
-        alt="A decorative hero photo used to demonstrate responsive image loading"
-        width="800" height="800"
-        loading="lazy">
-    </picture>
-    <video controls poster="assets/hero-md.jpg" preload="metadata">
-      <source src="assets/YOUR-VIDEO-FILENAME.mp4" type="video/mp4">
-      <track src="assets/captions.vtt" kind="captions" srclang="en" label="English">
-      Your browser does not support the video tag.
-    </video>
+    <h1>Hello!</h1>
+    <p>Hi, I'm learning web development and building my first site.</p>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card"><h3>Personal Website</h3><p>My first site built with HTML and CSS, with a responsive nav bar and layout.</p></article>
+        <article class="card"><h3>To-Do List</h3><p>A simple task list for adding, completing and removing daily tasks.</p></article>
+        <article class="card"><h3>Weather App</h3><p>Shows the current weather for any city using live data.</p></article>
+        <article class="card"><h3>Recipe Collection</h3><p>A small cookbook page with my favorite recipes, laid out in cards.</p></article>
+        <article class="card"><h3>Photo Gallery</h3><p>A responsive grid of photos that adapts to phone, tablet and desktop.</p></article>
+        <article class="card"><h3>Budget Tracker</h3><p>Tracks income and expenses and shows a running balance.</p></article>
+      </div>
+    </section>
+
+    <h2>My hobbies</h2>
+    <ul>
+      <li>Coding</li>
+      <li>Reading</li>
+      <li>Music</li>
+    </ul>
   </main>
+
   <footer>
     <p>&copy; 2026 Thea Loriezo</p>
   </footer>
