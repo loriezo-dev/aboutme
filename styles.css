@@ -1,0 +1,141 @@
+/* ===== Design tokens ===== */
+:root {
+  --clr-accent: #3b82f6;
+  --clr-accent-dark: #2563eb;
+  --clr-navy: #1e3a5f;
+  --clr-text: #1f2937;
+  --clr-muted: #6b7280;
+  --clr-bg: #f3f6fb;
+  --clr-card: #ffffff;
+
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1.5rem;
+  --space-lg: 2.5rem;
+
+  --radius: 12px;
+  --shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 8px 20px rgba(30, 58, 95, 0.15);
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: var(--clr-text);
+  background: var(--clr-bg);
+  margin: 0;
+  padding: 0 3rem; /* the header's -3rem margin cancels this out */
+}
+
+main,
+footer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: var(--clr-navy);
+  margin-bottom: var(--space-xs);
+}
+
+h2 {
+  color: var(--clr-navy);
+  margin-top: var(--space-lg);
+  padding-bottom: var(--space-xs);
+  border-bottom: 3px solid var(--clr-accent);
+  display: inline-block;
+}
+
+a {
+  color: var(--clr-accent-dark);
+}
+
+/* ===== Nav bar (Flexbox) ===== */
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--clr-navy);
+  color: white;
+  max-width: none;
+  margin: 0 -3rem var(--space-lg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.site-header .logo {
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: var(--space-md);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover {
+  color: var(--clr-accent);
+  border-bottom-color: var(--clr-accent);
+}
+
+/* ===== Projects grid (CSS Grid) ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.card {
+  padding: var(--space-md);
+  border-radius: var(--radius);
+  background: var(--clr-card);
+  border-top: 4px solid var(--clr-accent);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card h3 {
+  color: var(--clr-navy);
+  margin-top: 0;
+  margin-bottom: var(--space-xs);
+}
+
+.card p {
+  margin: 0;
+  color: var(--clr-muted);
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: var(--space-lg);
+  padding: var(--space-md) 0;
+  border-top: 1px solid #d1d9e6;
+  color: var(--clr-muted);
+  text-align: center;
+}
